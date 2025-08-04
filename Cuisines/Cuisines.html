@@ -1,3 +1,4 @@
+<html>
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
@@ -9,6 +10,7 @@
                 *{
                     background-color: gold;
                     font-family: cursive;
+                    text-align: center;
                 }
                 .grid-container{
                       background-color: gold;
@@ -32,6 +34,7 @@
                 padding: 20px 25px;
                 text-decoration: none;
                 border: 10px solid black;
+                text-align: center;
             }
             .menu li a:hover {
                 color:black
@@ -47,9 +50,11 @@
             .grid-container img {
                  width: 300px;
                  height: 300px;
+                 text-align: center;
             }
             .description {
                 color: black;
+                text-align: center;
             }
             .menu {
                 display: block;
@@ -61,6 +66,7 @@
                 position: sticky;
                 top: 0;
                 z-index: 1000;   
+                background-color: gold;
             }
             footer {
                 text-align: center;
@@ -73,8 +79,20 @@
                 justify-content: center;
                 background-color: gold;
                 padding: 10px;
+                text-align: center;
+            }
+            .grid-container{
+                grid-area: grid-container;
+                display: grid;
+                background-color: gold;
+                text-align: center;
+                grid-template-columns: auto auto;
+                grid-template-areas: "Punjab Rajasthan" "Kerala Tamil";
             }   
-             
+            #Punjab {grid-area: Punjab;} 
+            #Rajasthan {grid-area: Rajasthan;}
+            #Kerala {grid-area: Kerala;}
+            #Tamil {grid-area: Tamil;}
             </style>
     </head>
     <body>      
@@ -97,7 +115,7 @@
         </p>
     
     </header>
-    <div class="grid-container">
+    <div class="flex-container">
         <div>
     <ul class="menu">
     
@@ -112,7 +130,8 @@
     </ul>
     </div>
     </div>
-    <div class="grid-container" id="Punjab">
+    <div class = "grid-container">
+    <div class="flex-container" id="Punjab">
     <h2>Punjabi Cuisines</h2>
     Punjabi cuisine is known for its rich, flavorful, and hearty dishes, often featuring dairy products, wheat, and spices.
     It's characterized by a blend of rustic cooking techniques and bold flavors, with both vegetarian and non-vegetarian
@@ -137,7 +156,7 @@
     </ul>
     <img src="C:\Users\pmgna\Downloads\Joshua Coding\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Cuisines\punjabi.webp" style="width: 450px;height:300px ;">
     </div>
-    <div class="grid-container" id="Rajasthan">
+    <div class="flex-container" id="Rajasthan">
         <h2>Rajasthani Cuisines</h2>
         Rajasthani cuisine is known for its rich, spicy, and diverse flavors, reflecting the region's arid landscape and royal
         heritage.
@@ -166,7 +185,7 @@
         <img src="C:\Users\pmgna\Downloads\Joshua Coding\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Cuisines\rajasthani.avif"
             style="width: 450px;height:300px ;">
     </div>
-    <div class="grid-container" id="Kerala">
+    <div class="flex-container" id="Kerala">
         <h2>Kerala Cuisines</h2>
         Kerala cuisine is known for its rich, aromatic flavors and diverse dishes, reflecting the region's coastal location and
         spice trade history. Key elements include rice, coconut, seafood, and a variety of spices.
@@ -196,7 +215,7 @@
         <img src="C:\Users\pmgna\Downloads\Joshua Coding\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Cuisines\kerela.jpg"
             style="width: 450px;height:300px ;">
     </div>
-    <div class="grid-container" id="Tamil">
+    <div class="flex-container" id="Tamil">
         <h2>Tamil Cuisines</h2>
         Tamil cuisine is a vibrant and diverse culinary tradition from the southern Indian state of Tamil Nadu. It's known for
         its use of rice, lentils, and a variety of spices, resulting in dishes that are both flavorful and aromatic.
@@ -220,6 +239,7 @@
             </ul>
         <img src="C:\Users\pmgna\Downloads\Joshua Coding\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Cuisines\tamil nadu.jpg"
             style="width: 450px;height:300px ;">
+            </div>
             </div>
             <footer>
                 <div class="flex-container">
