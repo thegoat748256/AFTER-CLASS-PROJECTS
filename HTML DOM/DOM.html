@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            align-items: center;
+            background-color: gold;
+            font-family: cursive;
+        }
+        img {
+            height: 300px;
+            width: 500px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR SOLAR SYSTEM</title>
+</head>
+<body>
+    <header><h1 id="title">SolarSystem</h1>
+    <h2>The Solar System consists of the Sun, eight planets, their moons, asteroids, and comets, all bound by the Sun's gravity.</h2>
+    <p> It's center is the Sun, a star that provides light and heat. Orbiting the Sun are the inner rocky planets (Mercury,
+    Venus, Earth, Mars) and the outer gas and ice giants (Jupiter, Saturn, Uranus, Neptune). Moons orbit the planets, while
+    asteroids and comets are smaller bodies found throughout the system. The Solar System is a vast, mostly empty space that
+    formed about 4.6 billion years ago, a cosmic neighborhood within the Milky Way galaxy.</p>
+   </header>
+<script>
+    let div = document.createElement("div")
+    div.id = "My-p"
+    div.className = "Solar-System"
+    div.innerHTML = "<p>The Solar System consists of the Sun, eight planets, their moons, asteroids, and comets, all bound by the Sun's gravity.</p>"
+    document.body.append(div)
+    let text = document.getElementById("title")
+    text.innerHTML = "&#128513"
+    document.querySelector("header p").innerHTML = "<b>Good! keep it up.</b>"
+</script>
+</body>
+
+</html>
+
