@@ -11,6 +11,7 @@
         }
 
         .Navbar li a {
+            align-items: center;
             display: block;
             text-align: center;
             color: white;
@@ -21,7 +22,12 @@
         }
 
         .Navbar li a:hover {
+            align-items: center;
             color: black
+        }
+        .card a:hover {
+            align-items: center;
+            background-color: rgb(227, 0, 0);
         }
     </style>
     <meta charset="UTF-8">
@@ -59,26 +65,48 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-        <ul class="Navbar">
-            <li>
-                <h1><a
-                        href="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\footer in HTML\About us (footer.html).html">About
-                        Us</a></h1>
-            </li>
-
-            <li>
-                <h1><a
-                        href="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\footer in HTML\Our sports(footer.html).html">Our
-                        Sports</a></h1>
-            </li>
-        </ul>
+            <div class="container">
+                <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 230px; height: auto; border: 5px solid black; align-items: center;">
+                        <div class="card-heading">
+                            <img style="width: 190px; height: 230px;" src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\sports.jpeg">
+                        </div>
+                        <div class="card-body">
+                            <p><h1>Our Sports</h1></p>
+                            <p>Have a look at our sports</p>
+                            <a style="width: auto; height: auto;"
+                                href="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\Our Sports.html" class="btn btn-primary">See
+                                our sports!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 230px; height: auto; border: 5px solid black;">
+                        <div class="card-heading">
+                            <img style="width: 190px; height: 230px;"
+                                src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\about us.jpg">
+                        </div>
+                        <div class="card-body">
+                            <p>
+                            <h1>About us</h1>
+                            </p>
+                            <p>Check us out!</p>
+                            <a style="width: auto; height: auto;"
+                                href="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\About us.html"
+                                class="btn btn-primary">Know our details!</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
     </body>
     <footer>
-        <h1>By: Joshua Abhishek</h1>
+        <h5>By: Joshua Abhishek</h5>
 
-        <h1>Age: 10</h1>
+        <h5>Age: 10</h5>
 
-        <h1>Pls Contact Me If You Have Any Doubts: +91 9940091911</h1>
+        <h5>Pls Contact Me If You Have Any Doubts: +91 9940091911</h5>
     </footer>
 
     </html>
