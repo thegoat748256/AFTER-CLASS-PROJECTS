@@ -1,7 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
+    <!-- Bootstrap CSS -->
     <style>
         * {
             align-items: center;
@@ -9,7 +14,7 @@
             background-color: gold;
             font-family: cursive;
         }
-
+    
         .Navbar-2 li a {
             display: block;
             text-align: center;
@@ -19,40 +24,102 @@
             border: 10px solid black;
             text-align: center;
         }
-
+    
         .Navbar-2 li a:hover {
             color: black
         }
+        .carousel-slide {
+            width: 100%;
+            height: 400px;
+            
+        }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
+    <!-- ✅ jQuery and Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <h1>Our Sports</h1>
     <h2>We Offer A Lot Of Sports For Your Child Like:</h2>
     <ul class="Navbar-2">
         <li>
             <h1><a href="https://velammalsportsacademy.in/best-badminton-academy-in-chennai/">Badminton</a></h1>
         </li>
-
+    
         <li>
             <h1><a href="https://velammalsportsacademy.in/best-football-academy-in-chennai/">Football</a></h1>
         </li>
-
+    
         <li>
             <h1><a href="https://velammalsportsacademy.in/best-cricket-academy-in-chennai/">Cricket</a></h1>
         </li>
-
+    
         <li>
             <h1><a href="https://velammalsportsacademy.in/squash-academy-in-chennai/">Squash</a></h1>
         </li>
-
+    
         <li>
             <h1><a href="https://velammalsportsacademy.in/table-tennis-academy-in-chennai/">Table Tennis</a></h1>
         </li>
     </ul>
-</body>
+    <div class="container mt 4">
+    <div class="carousel-slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+            <li data-target="#mycarousel" data-slide-to="4"></li>
+            <li data-target="#mycarousel" data-slide-to="5"></li>
+            <li data-target="#mycarousel" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\footer in HTML\our sports.jpg" style="width: 550px; height: 300px;">
+            </div>
 
+            <div class="carousel-item">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\badminton.jpg" style="width: 550px; height: 300px;">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\table tennis.jpg" style="width: 550px; height: 300px;">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\squash.jpg" style="width: 550px; height: 300px;">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\cricket.avif" style="width: 550px; height: 300px;">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="C:\Users\divya\Downloads\WEB DEVELOPMENT\WEB DEVELOPMENT\AFTER CLASS PROJECTS\Footer in HTML (continued)\footaball.jpg" style="width: 550px; height: 300px;">
+            </div>
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">next</span></a>
+        </div>
+    </div>
+    </div>
+  </body>
 </html>
